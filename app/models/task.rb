@@ -1,5 +1,5 @@
 class Task < ApplicationRecord
-  #validates :name, presence: true
+  validates :name, presence: true, uniqueness: true
   #validates :name, length: { maximum: 30 }
   validate :varidate_name_not_including_comma
 
